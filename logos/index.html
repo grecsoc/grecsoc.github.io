@@ -1,0 +1,587 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRECSOC Logo Marks</title>
+<meta name="description" content="Twenty logo-mark concepts for GRECSOC, drawn as monochrome sketches for the leadership group to shortlist.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%2334506E' stroke-width='6'/%3E%3Cline x1='16' y1='50' x2='84' y2='50' stroke='%2334506E' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%2334506E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --paper:#FBFAF7; --paper-2:#F2EFE8; --ink:#17181C; --ink-soft:#54565E;
+  --line:#E3E0D7; --card:#FFFFFF; --accent:#34506E;
+  --f-display:"Newsreader", Georgia, serif;
+  --f-body:"Libre Franklin", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --step--1:.8125rem; --step-0:1rem; --step-1:1.1875rem; --step-4:2.375rem;
+  --measure:65ch; --pad:clamp(1.25rem, 5vw, 4.5rem);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#131417; --paper-2:#1A1B1F; --ink:#ECEBE5; --ink-soft:#9B9C98;
+    --line:#2B2C31; --card:#191A1E; --accent:#93B2D2;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#131417; --paper-2:#1A1B1F; --ink:#ECEBE5; --ink-soft:#9B9C98;
+  --line:#2B2C31; --card:#191A1E; --accent:#93B2D2;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--step-0);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;line-height:1.12;text-wrap:balance;font-weight:600}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:var(--pad)}
+.prose{max-width:var(--measure)}
+.eyebrow{font-family:var(--f-mono);font-size:var(--step--1);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0}
+
+.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar__row{display:flex;align-items:center;gap:1rem;min-height:56px}
+.brandmark{display:flex;align-items:center;gap:.6rem;font-family:var(--f-mono);font-size:var(--step--1);letter-spacing:.08em;text-transform:uppercase;font-weight:500;white-space:nowrap;text-decoration:none;color:inherit}
+.brandmark svg{width:20px;height:20px}
+.topnav{margin-left:auto;display:flex;gap:.15rem;font-family:var(--f-mono);font-size:var(--step--1)}
+.topnav a{text-decoration:none;color:var(--ink-soft);padding:.35rem .55rem;border-radius:4px}
+.topnav a:hover{color:var(--ink);background:var(--paper-2)}
+.themetoggle{background:none;border:1px solid var(--line);color:var(--ink-soft);font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;padding:.35rem .6rem;border-radius:5px;cursor:pointer}
+.themetoggle:hover{color:var(--ink)}
+
+.hero{padding-block:clamp(3rem,8vw,5.5rem) clamp(2rem,5vw,3.5rem);border-bottom:1px solid var(--line)}
+.hero h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.25rem,6vw,3.75rem);letter-spacing:-.015em;margin:.6rem 0 1.3rem;max-width:18ch}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero__lede{font-size:var(--step-1);color:var(--ink-soft);max-width:58ch}
+
+.section{padding-block:clamp(2.5rem,7vw,4.5rem)}
+.section__head{display:flex;flex-direction:column;gap:.8rem;margin-bottom:2rem}
+.section__head h2{font-family:var(--f-display);font-weight:400;font-size:var(--step-4);letter-spacing:-.01em}
+
+.legend{
+  display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;margin-top:1.5rem;padding:1rem 1.2rem;
+  border:1px solid var(--line);border-radius:10px;background:var(--paper-2);
+  font-family:var(--f-mono);font-size:var(--step--1);color:var(--ink-soft);
+}
+.legend b{color:var(--ink);font-weight:500}
+
+.grid{
+  display:grid;gap:1.25rem;margin-top:.5rem;
+  grid-template-columns:repeat(auto-fill,minmax(272px,1fr));
+}
+.logo{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:1.4rem;display:flex;flex-direction:column;gap:.9rem;
+}
+.logo__mark{height:118px;display:grid;place-items:center;color:var(--ink)}
+.logo__mark svg{width:92px;height:92px}
+.logo__n{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.12em;color:var(--ink-soft)}
+.logo__name{font-family:var(--f-display);font-weight:500;font-size:1.2rem;margin-top:-.35rem}
+.logo__note{font-size:var(--step--1);color:var(--ink-soft);line-height:1.5}
+.logo__uses{
+  margin-top:auto;display:flex;align-items:center;gap:.85rem;
+  padding-top:1rem;border-top:1px solid var(--line);
+}
+.u{display:inline-grid;place-items:center;flex:none}
+.u--sm{color:var(--ink)}
+.u--sm svg{width:22px;height:22px}
+.u--rev{background:var(--ink);border-radius:6px;width:38px;height:38px;color:var(--paper)}
+.u--rev svg{width:22px;height:22px}
+.u--lock{display:inline-flex;align-items:center;gap:.45rem;color:var(--ink);font-weight:700;letter-spacing:.03em;font-size:.92rem}
+.u--lock svg{width:19px;height:19px}
+
+.note{
+  margin-top:2.25rem;padding:1.1rem 1.25rem;border-left:3px solid var(--accent);
+  background:var(--paper-2);font-size:var(--step--1);color:var(--ink-soft);max-width:var(--measure);
+}
+.decide{margin-top:1.5rem;display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.decide .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.3rem}
+.decide h3{font-family:var(--f-mono);font-size:var(--step--1);font-weight:500;letter-spacing:.04em;margin-bottom:.5rem}
+.decide p{font-size:var(--step--1);color:var(--ink-soft);line-height:1.55}
+
+.foot{border-top:1px solid var(--line);padding-block:2.25rem}
+.foot p{font-family:var(--f-mono);font-size:var(--step--1);color:var(--ink-soft);max-width:70ch;line-height:1.7}
+.foot a{color:var(--accent)}
+</style>
+
+<!-- ===== symbol library: every mark defined once, referenced by <use> ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="def-stroke"></g>
+  </defs>
+
+  <symbol id="m01" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="7"/>
+    <line x1="12" y1="50" x2="88" y2="50" stroke="currentColor" stroke-width="7"/>
+    <circle cx="50" cy="50" r="9" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m02" viewBox="0 0 100 100">
+    <path d="M24 86 L24 46 A26 26 0 0 1 76 46 L76 86" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <line x1="12" y1="86" x2="20" y2="86" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <line x1="80" y1="86" x2="88" y2="86" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="m03" viewBox="0 0 100 100">
+    <path d="M18 68 A32 32 0 0 1 82 68" fill="none" stroke="currentColor" stroke-width="7"/>
+    <line x1="14" y1="68" x2="86" y2="68" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <line x1="50" y1="26" x2="50" y2="56" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="m04" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="7"/>
+    <path d="M50 16 A34 34 0 0 0 50 84 Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m05" viewBox="0 0 100 100">
+    <polygon points="50,14 81,32 81,68 50,86 19,68 19,32" fill="none" stroke="currentColor" stroke-width="6"/>
+    <path d="M50 14 V86 M19 32 L81 68 M81 32 L19 68" stroke="currentColor" stroke-width="4"/>
+    <circle cx="50" cy="50" r="6" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m06" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="7"/>
+    <polyline points="50,12 41,38 59,54 44,72 51,90" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="m07" viewBox="0 0 100 100">
+    <line x1="14" y1="30" x2="86" y2="30" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <path d="M50 30 V50 M50 50 L32 76 M50 50 L68 76 M50 60 L44 82 M50 60 L58 82" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="32" cy="78" r="4" fill="currentColor"/><circle cx="68" cy="78" r="4" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m08" viewBox="0 0 100 100">
+    <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke="currentColor" stroke-width="6" transform="rotate(-22 50 50)"/>
+    <circle cx="50" cy="50" r="7" fill="currentColor"/>
+    <circle cx="87" cy="35" r="6.5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m09" viewBox="0 0 100 100">
+    <path d="M76 26 H34 A16 16 0 0 0 18 42 V58 A16 16 0 0 0 34 74 H76 V50 H54" fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="miter" stroke-linecap="square"/>
+    <line x1="76" y1="26" x2="76" y2="36" stroke="currentColor" stroke-width="8"/>
+    <line x1="76" y1="74" x2="76" y2="64" stroke="currentColor" stroke-width="8"/>
+  </symbol>
+
+  <symbol id="m10" viewBox="0 0 100 100">
+    <circle cx="28" cy="72" r="7" fill="currentColor"/>
+    <path d="M28 50 A22 22 0 0 1 50 72" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <path d="M28 38 A34 34 0 0 1 62 72" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+    <path d="M28 26 A46 46 0 0 1 74 72" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="m11" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="7"/>
+    <path d="M16 40 H84 M16 60 H84 M50 16 V84" fill="none" stroke="currentColor" stroke-width="4"/>
+    <ellipse cx="50" cy="50" rx="13" ry="34" fill="none" stroke="currentColor" stroke-width="4"/>
+  </symbol>
+
+  <symbol id="m12" viewBox="0 0 100 100">
+    <polygon points="50,20 76,68 24,68" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/>
+    <line x1="8" y1="46" x2="40" y2="46" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 52 L92 44 M60 57 L92 57 M60 62 L92 70" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="m13" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="6"/>
+    <circle cx="50" cy="50" r="21" fill="none" stroke="currentColor" stroke-width="6"/>
+    <circle cx="50" cy="50" r="8" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m14" viewBox="0 0 100 100">
+    <line x1="50" y1="18" x2="50" y2="80" stroke="currentColor" stroke-width="7"/>
+    <line x1="20" y1="30" x2="80" y2="30" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <line x1="34" y1="82" x2="66" y2="82" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <path d="M20 30 L12 48 H28 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M80 30 L72 48 H88 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="m15" viewBox="0 0 100 100">
+    <path d="M14 80 H38 V58 H62 V36 H86" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="86" cy="36" r="6" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m16" viewBox="0 0 100 100">
+    <path d="M74 34 A26 26 0 1 0 74 66 H52 V50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+    <path d="M40 42 C40 34 52 34 52 42 C52 50 40 50 40 58 C40 66 52 66 52 58" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="m17" viewBox="0 0 100 100">
+    <path d="M22 50 A28 28 0 0 1 50 22" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-dasharray="1 11"/>
+    <path d="M50 22 A28 28 0 0 1 78 50 A28 28 0 0 1 50 78" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="50" cy="22" r="7" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m18" viewBox="0 0 100 100">
+    <circle cx="16" cy="66" r="3" fill="currentColor"/>
+    <circle cx="32" cy="56" r="4.5" fill="currentColor"/>
+    <circle cx="50" cy="46" r="6" fill="currentColor"/>
+    <circle cx="68" cy="37" r="7.5" fill="currentColor"/>
+    <circle cx="86" cy="28" r="9" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m19" viewBox="0 0 100 100">
+    <path d="M50 18 H74 A8 8 0 0 1 82 26 V74 A8 8 0 0 1 74 82 H26 A8 8 0 0 1 18 74 V26 A8 8 0 0 1 26 18 H38" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="50" cy="18" r="7" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="m20" viewBox="0 0 100 100">
+    <line x1="14" y1="62" x2="86" y2="62" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+    <path d="M28 62 A22 22 0 0 1 72 62" fill="none" stroke="currentColor" stroke-width="7"/>
+    <path d="M42 62 L38 76 L52 62 Z" fill="currentColor"/>
+  </symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap topbar__row">
+    <a class="brandmark" href="../" aria-label="GRECSOC — index">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="7"/><line x1="14" y1="50" x2="86" y2="50" stroke="currentColor" stroke-width="7"/><circle cx="50" cy="50" r="9" fill="currentColor"/></svg>
+      GRECSOC
+    </a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="../design_system/">Design systems&nbsp;↗</a>
+      <a href="#marks">The 20</a>
+      <a href="#decide">Decide</a>
+    </nav>
+    <button class="themetoggle" id="themetoggle" type="button">Theme</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Visual identity · logo marks · internal review draft</p>
+      <h1>Twenty marks, drawn as <em>sketches</em>.</h1>
+      <p class="hero__lede">
+        Twenty logo concepts for GRECSOC, each rendered in one colour so it is judged as
+        <em>form</em> — the palette and typeface come from the
+        <a href="../design_system/" style="color:var(--accent)">design-system page</a>. Every mark
+        is grounded in the group's vocabulary: the observatory, the threshold (<i>umbral</i>), AI as
+        an environment, the accident, the intermediate bodies that hold society together, the call
+        to regulate. Shortlist three.
+      </p>
+      <div class="legend">
+        <span>Each card shows the mark plus, below the rule:</span>
+        <span><b>·</b> app-icon size</span>
+        <span><b>·</b> reversed on ink</span>
+        <span><b>·</b> locked up with the wordmark</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="marks">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow">01 — The twenty</p>
+        <h2>Concepts to shortlist</h2>
+      </div>
+
+      <div class="grid">
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m01"/></svg></div>
+          <p class="logo__n">01</p>
+          <h3 class="logo__name">Meridiano</h3>
+          <p class="logo__note">The horizon of an observatory and the line of a threshold. The base mark used across the design-system page — the safe, institutional default.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m01"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m01"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m01"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m02"/></svg></div>
+          <p class="logo__n">02</p>
+          <h3 class="logo__name">Umbral</h3>
+          <p class="logo__note">A doorway on an open base — the threshold you cross. Costa's <i>umbral</i> between one technological era and the next.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m02"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m02"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m02"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m03"/></svg></div>
+          <p class="logo__n">03</p>
+          <h3 class="logo__name">Observatorio</h3>
+          <p class="logo__note">A dome with an open slit — the instrument that watches. Direct nod to Costa's Observatorio de Tecnologías, Sociedad y Ecosistemas Digitales.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m03"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m03"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m03"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m04"/></svg></div>
+          <p class="logo__n">04</p>
+          <h3 class="logo__name">Doble vida</h3>
+          <p class="logo__note">One disc, half solid and half outline — the living and the artificial sharing a single form. Straight from the book's title.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m04"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m04"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m04"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m05"/></svg></div>
+          <p class="logo__n">05</p>
+          <h3 class="logo__name">Malla</h3>
+          <p class="logo__note">A connected lattice — the unions, parties and civic groups that automation thins out. Pairs naturally with B · Ecosistemas.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m05"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m05"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m05"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m06"/></svg></div>
+          <p class="logo__n">06</p>
+          <h3 class="logo__name">Falla</h3>
+          <p class="logo__note">A fault line through the disc. Virilio's thesis, central to Costa: every technology invents its own accident.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m06"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m06"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m06"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m07"/></svg></div>
+          <p class="logo__n">07</p>
+          <h3 class="logo__name">Raíz</h3>
+          <p class="logo__note">Roots below the surface line — what grows under a technology once it takes hold. AI as a form of life, not an event.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m07"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m07"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m07"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m08"/></svg></div>
+          <p class="logo__n">08</p>
+          <h3 class="logo__name">Órbita</h3>
+          <p class="logo__note">A body held on a path around a centre it cannot leave — the <i>tecnósfera</i> as the system we now live inside.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m08"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m08"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m08"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m09"/></svg></div>
+          <p class="logo__n">09</p>
+          <h3 class="logo__name">Corchete</h3>
+          <p class="logo__note">A G built from an editorial bracket — the mark of a citation, an amendment, a clause. The regulation work made visible.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m09"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m09"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m09"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m10"/></svg></div>
+          <p class="logo__n">10</p>
+          <h3 class="logo__name">Señal</h3>
+          <p class="logo__note">Broadcast arcs rising from a point — an early warning, a call to act. Pairs with E · Señal.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m10"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m10"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m10"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m11"/></svg></div>
+          <p class="logo__n">11</p>
+          <h3 class="logo__name">Retícula</h3>
+          <p class="logo__note">A graticule globe — the geopolitics of AI, the US–China frame, infrastructure that spans borders.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m11"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m11"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m11"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m12"/></svg></div>
+          <p class="logo__n">12</p>
+          <h3 class="logo__name">Prisma</h3>
+          <p class="logo__note">One phenomenon entering, several readings leaving — what the social sciences do to a technology.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m12"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m12"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m12"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m13"/></svg></div>
+          <p class="logo__n">13</p>
+          <h3 class="logo__name">Diana</h3>
+          <p class="logo__note">Concentric rings closing on a centre — a risk held in view, measured by how close you stand to it.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m13"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m13"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m13"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m14"/></svg></div>
+          <p class="logo__n">14</p>
+          <h3 class="logo__name">Balanza</h3>
+          <p class="logo__note">Scales on a single post — the law we are asking for, reduced to its oldest symbol.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m14"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m14"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m14"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m15"/></svg></div>
+          <p class="logo__n">15</p>
+          <h3 class="logo__name">Escalón</h3>
+          <p class="logo__note">A staircase to a fixed point — a threshold reached step by step. Reads well at small sizes.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m15"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m15"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m15"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m16"/></svg></div>
+          <p class="logo__n">16</p>
+          <h3 class="logo__name">Monograma G·S</h3>
+          <p class="logo__note">A G with an S woven through the counter — grupo, ciencias sociales. The most conventional route.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m16"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m16"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m16"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m17"/></svg></div>
+          <p class="logo__n">17</p>
+          <h3 class="logo__name">Punto de no retorno</h3>
+          <p class="logo__note">A dotted arc becoming solid at a marked node — the tipping point, and the moment before it.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m17"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m17"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m17"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m18"/></svg></div>
+          <p class="logo__n">18</p>
+          <h3 class="logo__name">Enjambre</h3>
+          <p class="logo__note">Points growing along a curve — emergence, scale, the exponential the debate keeps circling.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m18"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m18"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m18"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m19"/></svg></div>
+          <p class="logo__n">19</p>
+          <h3 class="logo__name">Circuito abierto</h3>
+          <p class="logo__note">A closed loop left deliberately open at one node — the technology, and the room still left to shape it.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m19"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m19"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m19"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+        <figure class="logo">
+          <div class="logo__mark"><svg viewBox="0 0 100 100"><use href="#m20"/></svg></div>
+          <p class="logo__n">20</p>
+          <h3 class="logo__name">Horizonte hablado</h3>
+          <p class="logo__note">A rising sun that is also a speech bubble — the future as something argued in public, not decided elsewhere.</p>
+          <div class="logo__uses">
+            <span class="u u--sm"><svg viewBox="0 0 100 100"><use href="#m20"/></svg></span>
+            <span class="u u--rev"><svg viewBox="0 0 100 100"><use href="#m20"/></svg></span>
+            <span class="u u--lock"><svg viewBox="0 0 100 100"><use href="#m20"/></svg>GRECSOC</span>
+          </div>
+        </figure>
+
+      </div>
+
+      <p class="note">
+        These are <b>concept sketches</b>, not finished artwork — proportions, weights and the
+        wordmark lock-up would all be redrawn for whichever direction wins. The point is to agree on
+        an <i>idea</i> first: an instrument that watches, a threshold, a living system, an accident,
+        a fabric coming apart, a demand for a rule.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="decide">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow">02 — Your turn</p>
+        <h2>How to weigh in</h2>
+      </div>
+      <div class="decide">
+        <div class="card">
+          <h3>1 · Shortlist three</h3>
+          <p>Pick your top three by number. One line each on why.</p>
+        </div>
+        <div class="card">
+          <h3>2 · Which idea?</h3>
+          <p>Name the concept that should carry the group — observatory, threshold, ecosystem, signal, accident, regulation — even if none of these exact marks is right yet.</p>
+        </div>
+        <div class="card">
+          <h3>3 · Pair it up</h3>
+          <p>Say whether a mark should be tied to a specific design direction (e.g. 05 Malla with B · Ecosistemas, 10 Señal with E).</p>
+        </div>
+        <div class="card">
+          <h3>Leave your notes</h3>
+          <p>Open an issue on the repo, or reply on the thread where this link was shared. Reference marks by number.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>
+      GRECSOC · logo-mark review draft, 08 September 2026 · not for external circulation.
+      Companion to the <a href="../design_system/">design-system page</a>. Marks are single-colour
+      concept sketches; final artwork to follow the chosen direction. Wordmark set in Libre
+      Franklin as a placeholder.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY="grecsoc-theme";
+  var root=document.documentElement;
+  var btn=document.getElementById("themetoggle");
+  function sysDark(){return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;}
+  function current(){return root.getAttribute("data-theme") || (sysDark()?"dark":"light");}
+  try{ var saved=localStorage.getItem(KEY); if(saved){root.setAttribute("data-theme",saved);} }catch(e){}
+  function label(){ btn.textContent = current()==="dark" ? "Light" : "Dark"; }
+  label();
+  btn.addEventListener("click",function(){
+    var next = current()==="dark" ? "light" : "dark";
+    root.setAttribute("data-theme",next);
+    try{ localStorage.setItem(KEY,next); }catch(e){}
+    label();
+  });
+})();
+</script>

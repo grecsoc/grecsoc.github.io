@@ -1,16 +1,21 @@
-# GRECSOC — Identity Directions
+# GRECSOC — Identity Review
 
-A single-page proposal for the GRECSOC leadership group: **five complete visual
-identity systems** for our publications on LinkedIn, X and Instagram.
+Working drafts for the GRECSOC leadership group, hosted as a static GitHub Pages
+site. GRECSOC is a social-sciences hub for mitigating the risks of AI —
+proposing legal regulation and producing studies. Current programmes: the
+**BlueDot Impact AGI Strategy course** and an **open talk on AI safety and the
+social sciences**. Intellectual base: **Flavia Costa**, her group, and her book
+*Vidas artificiales: del accidente pandémico a las guerras de la IA* (Taurus, 2024).
 
-GRECSOC is a social-sciences hub working to mitigate the risks of artificial
-intelligence — proposing legal regulation and producing studies. Current
-programmes: the **BlueDot Impact AGI Strategy course** and an **open talk on AI
-safety and the social sciences**. The intellectual base is the work of **Flavia
-Costa**, her group, and her book *Vidas artificiales: del accidente pandémico a
-las guerras de la IA* (Taurus, 2024).
+## Pages
 
-## The four directions
+| Path | What it is |
+|---|---|
+| `/` | Landing page linking to the two drafts |
+| `/design_system/` | **Five** complete visual identity systems — palette, type, wordmark and LinkedIn / X / Instagram mock-ups for each, plus a comparison table and a vote |
+| `/logos/` | **Twenty** logo-mark concepts as single-colour sketches, to shortlist |
+
+### The five design directions
 
 | | Register | Best for |
 |---|---|---|
@@ -22,15 +27,15 @@ las guerras de la IA* (Taurus, 2024).
 
 ## Viewing
 
-Open `index.html` in a browser, or visit the GitHub Pages URL once Pages is
-enabled for this repo (Settings → Pages → Deploy from branch → `main` / root).
+Open `index.html` in a browser, or visit the GitHub Pages URL:
+<https://grecsoc.github.io>.
 
 ## Giving feedback
 
-Open an issue, or reply on the thread where this link was shared. Answer the
-three questions in the "How to weigh in" section: which direction, one identity
-or several, and the group's name.
+Open an issue, or reply on the thread where the link was shared. For the design
+systems, answer the three questions in "How to weigh in" (which direction, one
+identity or several, the group's name). For the logos, shortlist three by number.
 
 ---
 
-Draft for internal review. Mock-up copy is illustrative and unverified.
+Draft for internal review. Mock-up copy and marks are illustrative and unverified.

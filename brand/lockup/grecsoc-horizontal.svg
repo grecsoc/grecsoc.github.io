@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 108" role="img" aria-label="GRECSOC">
+  <title>GRECSOC — horizontal lockup. Wordmark set in Libre Franklin as a placeholder; the final typeface is chosen with the design direction (A–E).</title>
+  <g fill="currentColor">
+    <svg x="6" y="20" width="74" height="68" viewBox="19 21.5 62 57">
+      <circle cx="24.5" cy="73" r="5.5"/>
+      <circle cx="33.7" cy="67.3" r="6.8"/>
+      <circle cx="44.5" cy="59.2" r="8.2"/>
+      <circle cx="56.7" cy="48.2" r="9.8"/>
+      <circle cx="69.5" cy="33" r="11.5"/>
+    </svg>
+    <text x="100" y="76" font-family="'Libre Franklin', system-ui, -apple-system, Segoe UI, sans-serif" font-size="54" font-weight="600" letter-spacing="1">GRECSOC</text>
+  </g>
+</svg>

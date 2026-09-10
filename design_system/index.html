@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GRECSOC Identity Directions</title>
-<meta name="description" content="Five candidate visual identity systems for GRECSOC, a social-sciences hub for mitigating AI risks. Internal review draft.">
+<meta name="description" content="Six candidate visual identity systems for GRECSOC, a social-sciences hub for mitigating AI risks. Internal review draft.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2334506E'/%3E%3Cg fill='%23FBFAF7' transform='translate(2.6 11)'%3E%3Ccircle cx='14.4' cy='59.4' r='2.7'/%3E%3Ccircle cx='28.2' cy='57' r='4.1'/%3E%3Ccircle cx='43.6' cy='50.8' r='5.4'/%3E%3Ccircle cx='59.6' cy='40' r='6.8'/%3E%3Ccircle cx='75' cy='24' r='8.1'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -218,6 +218,11 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
   --line-c:#E1D9CB; --accent-c:#E2542D; --accent-2:#1B4D8F;
   --disp:"Archivo", system-ui, sans-serif; --bodyf:"Work Sans", system-ui, sans-serif; --labelf:"Archivo", system-ui, sans-serif;
 }
+.spec--f{
+  --bg:#FBFAF7; --surface:#FFFFFF; --ink-c:#17181C; --soft-c:#5B5C58;
+  --line-c:#E4E0D6; --accent-c:#34506E; --accent-2:#A9C4DD;
+  --disp:"Newsreader", Georgia, serif; --bodyf:"IBM Plex Sans", system-ui, sans-serif; --labelf:"IBM Plex Mono", monospace;
+}
 
 .spec__inner{padding:clamp(1.5rem,4vw,3rem)}
 .spec__topline{
@@ -236,12 +241,14 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
 .spec--c .spec__letter{color:#fff;border-radius:3px}
 .spec--d .spec__letter{border-radius:50%;font-style:italic}
 .spec--e .spec__letter{color:#fff;border-radius:3px;font-weight:800}
+.spec--f .spec__letter{border-radius:50%;font-weight:500}
 .spec__name{font-family:var(--disp);color:var(--ink-c);font-size:clamp(1.9rem,4.5vw,2.9rem);letter-spacing:-.01em;margin-bottom:1rem;font-weight:600}
 .spec--a .spec__name{font-weight:500}
 .spec--b .spec__name{font-style:italic;font-weight:500}
 .spec--c .spec__name{font-weight:700;letter-spacing:-.03em}
 .spec--d .spec__name{font-style:italic;font-weight:400}
 .spec--e .spec__name{font-weight:800;letter-spacing:-.02em;text-transform:uppercase}
+.spec--f .spec__name{font-weight:500}
 .spec__concept{font-family:var(--bodyf);color:var(--soft-c);max-width:64ch;font-size:1.02rem;line-height:1.62}
 .spec__concept b{color:var(--ink-c);font-weight:600}
 
@@ -271,6 +278,7 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
 .spec--c .typespec .big{font-weight:700;letter-spacing:-.03em}
 .spec--d .typespec .big{font-style:italic;font-weight:400}
 .spec--e .typespec .big{font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+.spec--f .typespec .big{font-weight:500}
 .typespec .scale{font-family:var(--labelf);font-size:.72rem;color:var(--soft-c);letter-spacing:.06em;margin-bottom:1rem}
 .typespec p{font-family:var(--bodyf);color:var(--soft-c);font-size:.9rem;line-height:1.6}
 .typespec .kicker{
@@ -293,6 +301,7 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
 .spec--c .wm .txt{font-family:var(--labelf);font-weight:600;font-size:1.25rem;letter-spacing:.02em}
 .spec--d .wm .txt{font-weight:400;letter-spacing:.09em}
 .spec--e .wm .txt{font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+.spec--f .wm .txt{font-family:var(--labelf);font-weight:500;letter-spacing:.04em;font-size:1rem}
 .wm--dark{background:var(--ink-c);color:var(--bg);padding:.7rem 1rem;border-radius:8px}
 .wm--dark .txt{color:var(--bg)}
 .wm--dark svg *{stroke:var(--bg) !important;fill:var(--bg)}
@@ -372,6 +381,14 @@ hr{border:0;border-top:1px solid var(--line);margin:0}
 .spec--e .poster__k{color:#FDF3EE;opacity:.9}
 .spec--e .poster__f{color:#FDF3EE;opacity:.85}
 
+/* F — cauce: quiet paper page, the mark does the work */
+.spec--f .poster{background:#FBFAF7;color:#17181C;border:1px solid #E4E0D6}
+.spec--f .poster > *{position:relative}
+.spec--f .poster__h{font-weight:500;font-size:1.2rem;color:#17181C}
+.spec--f .poster__k{font-family:var(--labelf);text-transform:none;letter-spacing:.02em;color:#34506E;opacity:1}
+.spec--f .poster__f{color:#5B5C58;opacity:1}
+.spec--f .poster__mark{position:absolute;top:.9rem;right:.9rem;width:2.2rem;height:auto;opacity:.9}
+
 /* verdict lists */
 .verdict{display:grid;gap:1.5rem;margin-top:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .verdict h4{font-family:var(--labelf);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft-c);font-weight:500;margin-bottom:.7rem}
@@ -435,6 +452,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
       <a href="#c">C · Protocolo</a>
       <a href="#d">D · Umbral</a>
       <a href="#e">E · Señal</a>
+      <a href="#f">F · Cauce</a>
       <a href="#compare">Compare</a>
       <a href="#decide">Decide</a>
       <a href="../logos/" style="color:var(--accent)">Logos&nbsp;↗</a>
@@ -447,12 +465,12 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
   <section class="hero">
     <div class="wrap">
       <p class="eyebrow">Visual identity · internal review draft · 08 Sep 2026</p>
-      <h1>Five ways GRECSOC could <em>look</em>.</h1>
+      <h1>Six ways GRECSOC could <em>look</em>.</h1>
       <p class="hero__lede">
-        A working proposal for the leadership group: five complete identity systems for our
+        A working proposal for the leadership group: six complete identity systems for our
         publications on LinkedIn, X and Instagram. Each is built for the same mission and the same
         intellectual base — they differ in tone, in who they speak to first, and in the job they do
-        best. Read the brief, walk the five, then use the last two sections to choose.
+        best. Read the brief, walk the six, then use the last two sections to choose.
       </p>
       <div class="hero__meta">
         <span>Hub for <b>social sciences &amp; AI risk mitigation</b></span>
@@ -488,7 +506,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
           group, and her book <strong><i>Vidas artificiales: del accidente pandémico a las guerras
           de la IA</i></strong> (Taurus, 2024). Her vocabulary — the <i>tecnósfera</i>, the
           <i>accident</i>, AI as a form of life rather than an event, the erosion of the
-          intermediate bodies that hold society together — runs through all five directions below.
+          intermediate bodies that hold society together — runs through all six directions below.
         </p>
 
         <ul class="pillars">
@@ -1121,6 +1139,127 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
     </div>
   </section>
 
+  <section class="section" id="f">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow">Direction F</p>
+        <h2>Cauce — the working draft</h2>
+      </div>
+
+      <article class="spec spec--f">
+        <div class="spec__inner">
+          <div class="spec__topline">
+            <span class="spec__letter">F</span>
+            <span>Cauce</span>
+            <span>Already live — grecsoc.github.io today</span>
+            <span>Best for: the homepage, everyday posts</span>
+          </div>
+
+          <h3 class="spec__name">The one already carrying the site</h3>
+          <p class="spec__concept">
+            Cauce isn't a proposal, it's what's already running: the public homepage, built while the
+            group finishes deciding among A–E. <b>Newsreader for headlines, IBM Plex Sans for body
+            copy, IBM Plex Mono for the wordmark and labels</b> — a serif voice for the Sociales side
+            and a mono/technical voice for the Computación side, in the same lock-up. No new colour:
+            just <b>navy, paper and ink</b>, the neutral palette already in <code>/brand/</code>. The
+            chosen Enjambre mark carries the identity instead of a colour block or a slogan.
+          </p>
+
+          <div class="spec__grid">
+            <div class="panel">
+              <h4>Palette</h4>
+              <div class="swatches">
+                <span class="sw"><i style="background:#34506E"></i><b>Navy</b> · #34506E</span>
+                <span class="sw"><i style="background:#FBFAF7;border-color:#D9D5C9"></i><b>Paper</b> · #FBFAF7</span>
+                <span class="sw"><i style="background:#17181C"></i><b>Ink</b> · #17181C</span>
+                <span class="sw"><i style="background:#A9C4DD"></i><b>Pale blue</b> · #A9C4DD</span>
+                <span class="sw"><i style="background:#F1EEE6"></i><b>Paper 2</b> · #F1EEE6</span>
+              </div>
+            </div>
+            <div class="panel typespec">
+              <h4>Typography</h4>
+              <p class="big">Cauce</p>
+              <p class="scale">DISPLAY · Newsreader 500 · sentence case</p>
+              <p>IBM Plex Sans sets the body; IBM Plex Mono carries the wordmark, nav labels and status tags — the exact pairing already live on the site.</p>
+              <p class="kicker">grecsoc.github.io · en producción</p>
+            </div>
+            <div class="panel">
+              <h4>Wordmark</h4>
+              <div class="wordmark">
+                <span class="wm">
+                  <svg width="22" height="22" viewBox="13 17.7 79.3 51.3" aria-hidden="true"><g fill="#34506E"><circle cx="16" cy="66" r="3"/><circle cx="31.3" cy="63.3" r="4.5"/><circle cx="48.4" cy="56.4" r="6"/><circle cx="66.2" cy="44.4" r="7.5"/><circle cx="83.3" cy="26.7" r="9"/></g></svg>
+                  <span class="txt">GRECSOC</span>
+                </span>
+                <span class="wm wm--dark" style="background:#34506E">
+                  <span class="txt" style="color:#FBFAF7">GRECSOC</span>
+                </span>
+                <p style="font-family:var(--labelf);font-size:.68rem;letter-spacing:.04em;color:var(--soft-c);text-transform:uppercase">The real Enjambre mark, not a stand-in — same file as /brand/</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mocks">
+            <h4>In practice — one system, three surfaces</h4>
+            <div class="mockrow">
+              <div class="device">
+                <div class="device__cap"><span>Website</span><span>grecsoc.github.io</span></div>
+                <div class="poster poster--wide">
+                  <svg class="poster__mark" viewBox="13 17.7 79.3 51.3" aria-hidden="true"><g fill="#34506E"><circle cx="16" cy="66" r="3"/><circle cx="31.3" cy="63.3" r="4.5"/><circle cx="48.4" cy="56.4" r="6"/><circle cx="66.2" cy="44.4" r="7.5"/><circle cx="83.3" cy="26.7" r="9"/></g></svg>
+                  <p class="poster__k">Un grupo de estudios en la UBA</p>
+                  <p class="poster__h">Acercamos métodos computacionales a las ciencias sociales.</p>
+                  <p class="poster__f"><span>GRECSOC</span><span>Sociales × Computación</span></p>
+                </div>
+                <div class="device__body" style="padding-top:.7rem">La home pública, tal cual está hoy: mismo mark, mismo par de tipografías, misma paleta neutra.</div>
+              </div>
+              <div class="device">
+                <div class="device__cap"><span>X</span><span>post</span></div>
+                <div class="device__bar">
+                  <span class="avatar">G</span>
+                  <span class="handle"><b>GRECSOC</b><span>@grecsoc</span></span>
+                </div>
+                <div class="device__body">Nuevo grupo de estudios en la UBA: métodos computacionales para Ciencias Sociales, y AI safety para quienes vienen de Sociales. Más en el link.</div>
+                <div class="poster" style="aspect-ratio:1.6/1">
+                  <svg class="poster__mark" viewBox="13 17.7 79.3 51.3" aria-hidden="true"><g fill="#34506E"><circle cx="16" cy="66" r="3"/><circle cx="31.3" cy="63.3" r="4.5"/><circle cx="48.4" cy="56.4" r="6"/><circle cx="66.2" cy="44.4" r="7.5"/><circle cx="83.3" cy="26.7" r="9"/></g></svg>
+                  <p class="poster__k">grecsoc.github.io</p>
+                  <p class="poster__h">Ciencias sociales y IA, en el mismo lenguaje</p>
+                  <p class="poster__f"><span>GRECSOC</span><span>Grupo de estudios</span></p>
+                </div>
+              </div>
+              <div class="device">
+                <div class="device__cap"><span>Instagram</span><span>1080×1080</span></div>
+                <div class="poster">
+                  <svg class="poster__mark" viewBox="13 17.7 79.3 51.3" aria-hidden="true"><g fill="#34506E"><circle cx="16" cy="66" r="3"/><circle cx="31.3" cy="63.3" r="4.5"/><circle cx="48.4" cy="56.4" r="6"/><circle cx="66.2" cy="44.4" r="7.5"/><circle cx="83.3" cy="26.7" r="9"/></g></svg>
+                  <p class="poster__k">Grupo de lectura · en curso</p>
+                  <p class="poster__h">De la formación a la propuesta.</p>
+                  <p class="poster__f"><span>GRECSOC</span><span>Sumate</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="verdict">
+            <div>
+              <h4>Where it wins</h4>
+              <ul>
+                <li>Already live — zero migration cost, zero new assets to make.</li>
+                <li>The serif/mono pairing literally embodies the bridge between the two audiences.</li>
+                <li>Calm enough to post every day without fatiguing readers.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Watch-outs</h4>
+              <ul>
+                <li>Doesn't shout — may feel too quiet for a campaign or launch moment.</li>
+                <li>Leans on the mark alone; no illustration system behind it yet.</li>
+                <li>Serif display overlaps with Umbral's register — worth clarifying the split if both stay.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- ============================ COMPARE ============================ -->
   <section class="section" id="compare">
     <div class="wrap">
@@ -1142,6 +1281,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <th scope="col">C · Protocolo</th>
               <th scope="col">D · Umbral</th>
               <th scope="col">E · Señal</th>
+              <th scope="col">F · Cauce</th>
             </tr>
           </thead>
           <tbody>
@@ -1152,6 +1292,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td>Labs, ministries, technical staff</td>
               <td>The book's audience; long-form readers</td>
               <td>The public; allied organisations</td>
+              <td>Everyone — it's the live public homepage</td>
             </tr>
             <tr>
               <th scope="row">Tone</th>
@@ -1160,6 +1301,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td>Precise, systematic</td>
               <td>Literary, unhurried</td>
               <td>Direct, mobilising</td>
+              <td>Calm, plain-spoken</td>
             </tr>
             <tr>
               <th scope="row">Type feel</th>
@@ -1168,6 +1310,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td>Spec sheet / interface</td>
               <td>Title page / small press</td>
               <td>Campaign poster, clean</td>
+              <td>Quiet editorial webpage</td>
             </tr>
             <tr>
               <th scope="row">Best format</th>
@@ -1176,6 +1319,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td>Diagrams, carousels, LinkedIn</td>
               <td>Essays, reviews, newsletters</td>
               <td>Instagram, X, Stories</td>
+              <td>Website, everyday posts</td>
             </tr>
             <tr>
               <th scope="row">Main risk</th>
@@ -1184,6 +1328,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td>Reads as cold / startup-y</td>
               <td>Too slow for news or alerts</td>
               <td>Tips into slogan</td>
+              <td>Reads as safe / undifferentiated</td>
             </tr>
             <tr>
               <th scope="row">Production load</th>
@@ -1191,6 +1336,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td><span class="tag">Medium–High</span></td>
               <td><span class="tag">Low</span></td>
               <td><span class="tag">Medium</span></td>
+              <td><span class="tag">Low</span></td>
               <td><span class="tag">Low</span></td>
             </tr>
             <tr>
@@ -1200,6 +1346,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
               <td>The <i>tecnósfera</i> as infrastructure</td>
               <td><i>Vidas artificiales</i> as an object</td>
               <td>Her call to regulate, made public</td>
+              <td>Neutral house style — doesn't stake a register yet</td>
             </tr>
           </tbody>
         </table>
@@ -1212,7 +1359,8 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
         institutional posts, <strong style="color:var(--ink)">D · Umbral for the essay and
         reading-group strand</strong>, and <strong style="color:var(--ink)">E · Señal reserved for
         regulation campaigns</strong>. B and C are strong single-identity choices if the group would
-        rather not run more than one.
+        rather not run more than one. <strong style="color:var(--ink)">F · Cauce is already live</strong>
+        as the neutral default on the homepage while the group finishes deciding among A–E.
       </p>
     </div>
   </section>
@@ -1231,7 +1379,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
       <div class="decide">
         <div class="card">
           <h3>1 · Which direction?</h3>
-          <p>Rank A / B / C / D / E. Say what your first choice gets right and what worries you about it.</p>
+          <p>Rank A / B / C / D / E / F. Say what your first choice gets right and what worries you about it.</p>
         </div>
         <div class="card">
           <h3>2 · One identity or several?</h3>
@@ -1243,7 +1391,7 @@ table.compare{border-collapse:collapse;width:100%;min-width:820px;font-size:var(
         </div>
         <div class="card">
           <h3>Leave your notes</h3>
-          <p>Open an issue on the repo, or reply on the thread where this link was shared. Add screenshots and mark them A–E.</p>
+          <p>Open an issue on the repo, or reply on the thread where this link was shared. Add screenshots and mark them A–F.</p>
         </div>
       </div>
     </div>

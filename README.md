@@ -11,11 +11,11 @@ social sciences**. Intellectual base: **Flavia Costa**, her group, and her book
 
 | Path | What it is |
 |---|---|
-| `/` | Landing page linking to the two drafts |
-| `/design_system/` | **Five** complete visual identity systems — palette, type, wordmark and LinkedIn / X / Instagram mock-ups for each, plus a comparison table and a vote |
+| `/` | The public GRECSOC homepage (direction F · Cauce) |
+| `/design_system/` | **Six** complete visual identity systems — palette, type, wordmark and LinkedIn / X / Instagram mock-ups for each, plus a comparison table and a vote |
 | `/logos/` | **Twenty** logo-mark concepts as single-colour sketches, to shortlist |
 
-### The five design directions
+### The six design directions
 
 | | Register | Best for |
 |---|---|---|
@@ -24,6 +24,7 @@ social sciences**. Intellectual base: **Flavia Costa**, her group, and her book
 | **C · Protocolo** | The system — grid, mono, spec-sheet | High-volume publishing, technical credibility |
 | **D · Umbral** | The imprint — publishes like a small press | Essays, reviews, the reading group |
 | **E · Señal** | The campaign — clean, mobilising | Open letters, calls to regulate |
+| **F · Cauce** | The working draft — quiet, mark-led, already live | The homepage, everyday posts |
 
 ## Viewing
 

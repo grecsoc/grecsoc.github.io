@@ -75,7 +75,10 @@ section h2{font-family:var(--f-display);font-weight:500;font-size:1.7rem;margin:
 .refs{max-width:var(--measure)}
 .refs cite{font-style:italic}
 
-.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:1.6rem}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem}
+.person{background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:1.3rem 1.3rem 1.4rem}
+.person__avatar{width:64px;height:64px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem;color:var(--ink-soft)}
+.person__avatar svg{width:28px;height:28px}
 .person h3{font-family:var(--f-body);font-weight:600;font-size:1.02rem;margin:0 0 .15rem}
 .person .role{font-family:var(--f-mono);font-size:.78rem;color:var(--navy);display:block;margin-bottom:.5rem}
 .person p{margin:0;color:var(--ink-soft);font-size:.92rem}
@@ -223,16 +226,19 @@ footer.foot{padding:3rem 0 2.5rem}
       <h2>Quiénes somos</h2>
       <div class="team">
         <div class="person">
+          <div class="person__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.2"/><path d="M5 19c0-3.5 3-6 7-6s7 2.5 7 6" stroke-linecap="round"/></svg></div>
           <h3>Azul Ferreyra</h3>
           <span class="role">Co-fundadora</span>
           <p>Graduada en Sociología, FSOC (Sociales), UBA.</p>
         </div>
         <div class="person">
+          <div class="person__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.2"/><path d="M5 19c0-3.5 3-6 7-6s7 2.5 7 6" stroke-linecap="round"/></svg></div>
           <h3>Agustín Nielsen</h3>
           <span class="role">Co-fundador</span>
           <p>Estudiante avanzado de Sociología, FSOC (Sociales), UBA.</p>
         </div>
         <div class="person">
+          <div class="person__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.2"/><path d="M5 19c0-3.5 3-6 7-6s7 2.5 7 6" stroke-linecap="round"/></svg></div>
           <h3>Lucas Vitali</h3>
           <span class="role">Advisor</span>
           <p>Estudiante avanzado de Computación, FCEyN (Exactas), UBA.</p>

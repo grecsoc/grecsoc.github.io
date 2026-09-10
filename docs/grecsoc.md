@@ -76,11 +76,11 @@ cuestiones desde las Ciencias Sociales.
 
 ## 7. Quiénes somos
 
-Equipo impulsor:
+Equipo:
 
-- **Lucas Vitali** — estudiante avanzado de Computación, FCEyN (Exactas), UBA.
-- **Azul Ferreyra** — graduada en Sociología, FSOC (Sociales), UBA.
-- **Agustín Nielsen** — estudiante avanzado de Sociología, FSOC (Sociales), UBA.
+- **Azul Ferreyra** — co-fundadora. Graduada en Sociología, FSOC (Sociales), UBA.
+- **Agustín Nielsen** — co-fundador. Estudiante avanzado de Sociología, FSOC (Sociales), UBA.
+- **Lucas Vitali** — advisor. Estudiante avanzado de Computación, FCEyN (Exactas), UBA.
 
 ## 8. Posición y tono
 
@@ -100,7 +100,7 @@ Equipo impulsor:
   investigadores y espacios que trabajan tecnología y sociedad; estudiantes de
   disciplinas técnicas interesados en la dimensión social.
 - **Sitio:** <https://grecsoc.github.io>
-- **Redes:** LinkedIn, X, Instagram.
+- **Redes:** X, Instagram, Substack y YouTube — usuario `grecsoc` en todas. Mail: `grecsoc2026@gmail.com`.
 
 ## 10. Glosario rápido
 

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRECSOC — Grupo de Estudios de Ciencias Sociales Computacionales</title>
+<meta name="description" content="Acercamos métodos computacionales a las ciencias sociales, y llevamos las preguntas de las ciencias sociales a los debates técnicos sobre la IA. Un espacio de formación e investigación en la UBA.">
+<link rel="icon" type="image/svg+xml" href="../brand/favicon.svg">
+<link rel="apple-touch-icon" href="../brand/favicon/apple-touch-icon-180.png">
+<meta property="og:title" content="GRECSOC — Grupo de Estudios de Ciencias Sociales Computacionales">
+<meta property="og:description" content="Acercamos métodos computacionales a las ciencias sociales, y llevamos las preguntas de las ciencias sociales a los debates técnicos sobre la IA.">
+<meta property="og:image" content="https://grecsoc.github.io/brand/social/og-light.png">
+<meta property="og:url" content="https://grecsoc.github.io/site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --navy:#34506E; --navy-deep:#22374C; --ink:#17181C; --ink-soft:#5B5C58;
+  --paper:#FBFAF7; --paper-2:#F1EEE6; --line:#E4E0D6; --paleblue:#A9C4DD;
+  --f-display:'Newsreader',Georgia,serif; --f-body:'IBM Plex Sans',system-ui,sans-serif; --f-mono:'IBM Plex Mono',monospace;
+  --measure:38rem;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--navy)}
+a.plain{color:inherit;text-decoration:none}
+.wrap{max-width:64rem;margin:0 auto;padding:0 1.5rem}
+
+header.top{padding:1.6rem 0}
+.top__row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--f-mono);font-size:.85rem;letter-spacing:.04em;font-weight:500;text-decoration:none;color:var(--ink)}
+.brand svg{width:22px;height:22px}
+nav.social{display:flex;gap:1.1rem;font-family:var(--f-mono);font-size:.8rem}
+nav.social a{text-decoration:none;color:var(--ink-soft)}
+nav.social a:hover{color:var(--navy)}
+
+.hero{padding:2.5rem 0 4rem}
+.hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.hero__kicker{font-family:var(--f-body);font-size:.95rem;color:var(--ink-soft);margin:0 0 .9rem}
+.hero h1{font-family:var(--f-display);font-weight:500;font-size:clamp(2.1rem,4.4vw,3.1rem);line-height:1.18;letter-spacing:-.01em;margin:0 0 1.1rem;max-width:16ch}
+.hero__sub{font-size:1.1rem;color:var(--ink-soft);max-width:42ch;margin:0 0 1.6rem}
+.hero__origin{font-size:.95rem;color:var(--ink-soft);max-width:42ch;line-height:1.6}
+.hero__cta{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.7rem;background:var(--navy);color:var(--paper);text-decoration:none;font-family:var(--f-body);font-weight:500;font-size:.95rem;padding:.75rem 1.2rem;border-radius:6px}
+.hero__cta:hover{background:var(--navy-deep)}
+.hero__art{display:flex;justify-content:center}
+.hero__art svg{width:100%;max-width:340px;height:auto}
+
+section{padding:3.2rem 0;border-top:1px solid var(--line)}
+section h2{font-family:var(--f-display);font-weight:500;font-size:1.7rem;margin:0 0 1.2rem;letter-spacing:-.005em}
+.lede{max-width:var(--measure);font-size:1.05rem;color:var(--ink-soft)}
+
+.goals{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem 2.5rem;margin-top:1.6rem}
+.goal{padding-left:1.05rem;border-left:2px solid var(--paleblue)}
+.goal h3{font-family:var(--f-body);font-weight:600;font-size:1rem;margin:0 0 .35rem}
+.goal p{margin:0;color:var(--ink-soft);font-size:.95rem}
+
+.flow{display:flex;align-items:center;gap:0;margin:1.8rem 0 .5rem;flex-wrap:wrap}
+.flow__step{font-family:var(--f-display);font-size:1.3rem;font-weight:500}
+.flow__dots{display:flex;align-items:center;gap:5px;margin:0 .9rem}
+.flow__dots span{display:block;border-radius:50%;background:var(--navy)}
+.flow__notes{display:flex;gap:2.4rem;margin-top:.9rem;flex-wrap:wrap}
+.flow__notes p{margin:0;max-width:16rem;color:var(--ink-soft);font-size:.9rem}
+
+.programs{margin-top:1.6rem;display:flex;flex-direction:column;gap:0}
+.program{display:flex;justify-content:space-between;gap:1.5rem;padding:1.1rem 0;border-top:1px solid var(--line)}
+.program:first-child{border-top:none}
+.program h3{font-family:var(--f-body);font-weight:600;font-size:1rem;margin:0 0 .3rem}
+.program p{margin:0;color:var(--ink-soft);font-size:.92rem;max-width:36rem}
+.tag{font-family:var(--f-mono);font-size:.78rem;color:var(--navy);background:var(--paleblue);padding:.3rem .55rem;border-radius:5px;white-space:nowrap;height:fit-content}
+
+.refs{max-width:var(--measure)}
+.refs cite{font-style:italic}
+
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-top:1.6rem}
+.person h3{font-family:var(--f-body);font-weight:600;font-size:1.02rem;margin:0 0 .15rem}
+.person .role{font-family:var(--f-mono);font-size:.78rem;color:var(--navy);display:block;margin-bottom:.5rem}
+.person p{margin:0;color:var(--ink-soft);font-size:.92rem}
+
+footer.foot{padding:3rem 0 2.5rem}
+.foot__row{display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;flex-wrap:wrap}
+.foot__links{display:flex;gap:1.3rem;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem}
+.foot__links a{text-decoration:none;color:var(--ink)}
+.foot__links a:hover{color:var(--navy)}
+.foot__note{font-size:.85rem;color:var(--ink-soft);max-width:26rem}
+
+@media (max-width:760px){
+  .hero__grid{grid-template-columns:1fr}
+  .hero__art{order:-1;max-width:220px;margin:0 auto 1rem}
+  .goals{grid-template-columns:1fr}
+  .team{grid-template-columns:1fr}
+  nav.social{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top__row">
+    <a class="brand" href="./">
+      <svg viewBox="13 17.7 79.3 51.3" aria-hidden="true"><g fill="#34506E">
+        <circle cx="16" cy="66" r="3"/><circle cx="31.3" cy="63.3" r="4.5"/><circle cx="48.4" cy="56.4" r="6"/><circle cx="66.2" cy="44.4" r="7.5"/><circle cx="83.3" cy="26.7" r="9"/>
+      </g></svg>
+      GRECSOC
+    </a>
+    <nav class="social" aria-label="Redes">
+      <a href="https://x.com/grecsoc">X</a>
+      <a href="https://instagram.com/grecsoc">Instagram</a>
+      <a href="https://grecsoc.substack.com">Substack</a>
+      <a href="https://youtube.com/@grecsoc">YouTube</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="border-top:none">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="hero__kicker">Un grupo de estudios en la Universidad de Buenos Aires</p>
+        <h1>Acercamos métodos computacionales a las ciencias sociales.</h1>
+        <p class="hero__sub">Y llevamos las preguntas de las ciencias sociales a los debates técnicos sobre la inteligencia artificial.</p>
+        <p class="hero__origin">Nace en 2026, impulsado por estudiantes y graduados de Computación (Exactas) y de Sociología (Sociales).</p>
+        <a class="hero__cta" href="mailto:grecsoc2026@gmail.com">Escribinos</a>
+      </div>
+      <div class="hero__art">
+        <svg viewBox="13 17.7 79.3 51.3" aria-hidden="true"><g fill="#34506E">
+          <circle cx="16" cy="66" r="3"/><circle cx="31.3" cy="63.3" r="4.5"/><circle cx="48.4" cy="56.4" r="6"/><circle cx="66.2" cy="44.4" r="7.5"/><circle cx="83.3" cy="26.7" r="9"/>
+        </g></svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="por-que">
+    <div class="wrap">
+      <h2>Por qué</h2>
+      <p class="lede">Las ciencias sociales tienen mucho para decir sobre la sociedad digital y sobre los riesgos de la IA, pero ese aporte casi nunca llega a los espacios donde se discute la agenda técnica. Al mismo tiempo, los métodos computacionales —análisis de datos, modelado, procesamiento de lenguaje, simulación— llegan tarde y de forma desigual a la formación en Ciencias Sociales.</p>
+    </div>
+  </section>
+
+  <section id="que-hacemos">
+    <div class="wrap">
+      <h2>Qué hacemos</h2>
+      <div class="goals">
+        <div class="goal">
+          <h3>Métodos computacionales para Ciencias Sociales</h3>
+          <p>Formación y práctica para incorporar herramientas computacionales al trabajo en Sociales.</p>
+        </div>
+        <div class="goal">
+          <h3>Estudio de la sociedad digital</h3>
+          <p>Cómo la digitalización y la IA reconfiguran instituciones, trabajo, cultura y política.</p>
+        </div>
+        <div class="goal">
+          <h3>AI safety desde las ciencias sociales</h3>
+          <p>Acercar los debates sobre riesgos de la IA a estudiantes y profesionales de Sociales.</p>
+        </div>
+        <div class="goal">
+          <h3>Puente entre disciplinas</h3>
+          <p>Intercambio estable entre Ciencias Sociales y las disciplinas técnicas que trabajan estos temas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-trabajamos">
+    <div class="wrap">
+      <h2>Cómo trabajamos</h2>
+      <div class="flow">
+        <span class="flow__step">Formación</span>
+        <span class="flow__dots"><span style="width:4px;height:4px"></span><span style="width:6px;height:6px"></span><span style="width:8px;height:8px"></span></span>
+        <span class="flow__step">Investigación</span>
+        <span class="flow__dots"><span style="width:4px;height:4px"></span><span style="width:6px;height:6px"></span><span style="width:8px;height:8px"></span></span>
+        <span class="flow__step">Propuesta</span>
+      </div>
+      <div class="flow__notes">
+        <p>Un grupo con vocabulario común entre ambas disciplinas.</p>
+        <p>Preguntas concretas, trabajadas en conjunto.</p>
+        <p>Resultados aplicables: política pública, práctica profesional, agenda de investigación.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programas">
+    <div class="wrap">
+      <h2>Programas actuales</h2>
+      <div class="programs">
+        <div class="program">
+          <div>
+            <h3>Curso introductorio de AI Safety</h3>
+            <p>Creado por <a href="https://bluedot.org">BlueDot Impact</a>, facilitado por GRECSOC para estudiantes y profesionales de Ciencias Sociales.</p>
+          </div>
+          <span class="tag">En preparación</span>
+        </div>
+        <div class="program">
+          <div>
+            <h3>Charla abierta</h3>
+            <p>Introducción a AI safety y ciencias sociales, para público de Sociales.</p>
+          </div>
+          <span class="tag">Planificada</span>
+        </div>
+        <div class="program">
+          <div>
+            <h3>Grupo de lectura</h3>
+            <p>Lectura y discusión de bibliografía de base.</p>
+          </div>
+          <span class="tag">En curso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="referentes">
+    <div class="wrap">
+      <h2>Marco intelectual</h2>
+      <p class="lede refs">Partimos del trabajo de <b>Flavia Costa</b>, investigadora del CONICET, y su equipo en el Observatorio de Tecnologías, Sociedad y Ecosistemas Digitales (UBA) / Tecnoceno Lab — y de su libro <cite>Vidas artificiales: del accidente pandémico a las guerras de la IA</cite> (Taurus, 2024).</p>
+    </div>
+  </section>
+
+  <section id="equipo">
+    <div class="wrap">
+      <h2>Quiénes somos</h2>
+      <div class="team">
+        <div class="person">
+          <h3>Azul Ferreyra</h3>
+          <span class="role">Co-fundadora</span>
+          <p>Graduada en Sociología, FSOC (Sociales), UBA.</p>
+        </div>
+        <div class="person">
+          <h3>Agustín Nielsen</h3>
+          <span class="role">Co-fundador</span>
+          <p>Estudiante avanzado de Sociología, FSOC (Sociales), UBA.</p>
+        </div>
+        <div class="person">
+          <h3>Lucas Vitali</h3>
+          <span class="role">Advisor</span>
+          <p>Estudiante avanzado de Computación, FCEyN (Exactas), UBA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__row">
+      <p class="foot__note">GRECSOC — Grupo de Estudios de Ciencias Sociales Computacionales. Universidad de Buenos Aires.</p>
+      <div class="foot__links">
+        <a href="https://x.com/grecsoc">X</a>
+        <a href="https://instagram.com/grecsoc">Instagram</a>
+        <a href="https://grecsoc.substack.com">Substack</a>
+        <a href="https://youtube.com/@grecsoc">YouTube</a>
+        <a href="mailto:grecsoc2026@gmail.com">grecsoc2026@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

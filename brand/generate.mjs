@@ -25,10 +25,12 @@ const OUT_SOCIAL = join(HERE, 'social');
 const OUT_FAV = join(HERE, 'favicon');
 
 // ---- geometry — one mark, shared with the .svg sources in brand/mark/ -------
-// Five beads that kiss, growing along a rising curve. bbox-centred in 0 0 100.
-const GEOM = [[24.5,73.0,5.5],[33.7,67.3,6.8],[44.5,59.2,8.2],[56.7,48.2,9.8],[69.5,33.0,11.5]];
-const GEOM_VB = '19 21.5 62 57';                 // tight bounding box of GEOM
-const GEOM_NUDGE = 'translate(-3.4 1.1)';         // optical centring for square crops
+// Five beads that DON'T touch, on a rising curve that steepens toward the last
+// bead (not a straight line) — reads as acceleration/exponential. Gaps between
+// bead edges are equal (~8 units) rather than center-to-center spacing.
+const GEOM = [[16,66,3],[31.3,63.3,4.5],[48.4,56.4,6],[66.2,44.4,7.5],[83.3,26.7,9]];
+const GEOM_VB = '13 17.7 79.3 51.3';              // tight bounding box of GEOM
+const GEOM_NUDGE = 'translate(-2.7 6.7)';         // optical centring for square crops
 
 // ---- tokens ----------------------------------------------------------------
 const T = {
@@ -56,7 +58,7 @@ const markSquare = (fill, size) =>
 
 // mark cropped to its bounding box — fills its frame, for lockups
 const markTight = (fill, h) =>
-  `<svg width="${(h * 62 / 57).toFixed(1)}" height="${h}" viewBox="${GEOM_VB}" fill="${fill}"
+  `<svg width="${(h * 79.3 / 51.3).toFixed(1)}" height="${h}" viewBox="${GEOM_VB}" fill="${fill}"
         xmlns="http://www.w3.org/2000/svg">${dots(fill)}</svg>`;
 
 // Libre Franklin, fetched once by Node (Chromium here has no network) and

@@ -31,7 +31,7 @@ brand/
 
 ## Status
 
-- **Mark:** final. One geometry (five beads that touch, growing along a curve).
+- **Mark:** final. One geometry (five beads that don't touch, on a rising curve that steepens toward the last bead, edge-to-edge gaps equal (~8 units)).
 - **Colour:** the shared neutral shell palette (navy `#34506E`, ink `#17181C`,
   paper `#FBFAF7`, pale blue `#A9C4DD` for the mark on dark). A direction-specific
   palette replaces this once the design direction (A–E) is chosen.

@@ -34,9 +34,10 @@ header.top{padding:1.6rem 0}
 .top__row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--f-mono);font-size:.85rem;letter-spacing:.04em;font-weight:500;text-decoration:none;color:var(--ink)}
 .brand svg{width:22px;height:22px}
-nav.social{display:flex;gap:1.1rem;font-family:var(--f-mono);font-size:.8rem}
-nav.social a{text-decoration:none;color:var(--ink-soft)}
+nav.social{display:flex;gap:1rem}
+nav.social a{color:var(--ink-soft);display:flex}
 nav.social a:hover{color:var(--navy)}
+nav.social svg{width:18px;height:18px}
 
 .hero{padding:2.5rem 0 4rem}
 .hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
@@ -76,18 +77,20 @@ section h2{font-family:var(--f-display);font-weight:500;font-size:1.7rem;margin:
 .refs cite{font-style:italic}
 
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem}
-.person{background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:1.3rem 1.3rem 1.4rem}
-.person__avatar{width:64px;height:64px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem;color:var(--ink-soft)}
-.person__avatar svg{width:28px;height:28px}
+.person{background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:1.6rem 1.3rem 1.5rem;display:flex;flex-direction:column;align-items:center;text-align:center}
+.person__avatar{width:96px;height:96px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;color:var(--ink-soft)}
+.person__avatar svg{width:42px;height:42px}
 .person h3{font-family:var(--f-body);font-weight:600;font-size:1.02rem;margin:0 0 .15rem}
 .person .role{font-family:var(--f-mono);font-size:.78rem;color:var(--navy);display:block;margin-bottom:.5rem}
-.person p{margin:0;color:var(--ink-soft);font-size:.92rem}
+.person p{margin:0;color:var(--ink-soft);font-size:.92rem;max-width:22ch}
 
 footer.foot{padding:3rem 0 2.5rem}
 .foot__row{display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;flex-wrap:wrap}
-.foot__links{display:flex;gap:1.3rem;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem}
-.foot__links a{text-decoration:none;color:var(--ink)}
+.foot__links{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap;font-family:var(--f-mono);font-size:.85rem}
+.foot__links a{text-decoration:none;color:var(--ink);display:flex;align-items:center}
 .foot__links a:hover{color:var(--navy)}
+.foot__links svg{width:19px;height:19px}
+.foot__links .mail{gap:.4rem}
 .foot__note{font-size:.85rem;color:var(--ink-soft);max-width:26rem}
 
 @media (max-width:760px){
@@ -110,10 +113,10 @@ footer.foot{padding:3rem 0 2.5rem}
       GRECSOC
     </a>
     <nav class="social" aria-label="Redes">
-      <a href="https://x.com/grecsoc">X</a>
-      <a href="https://instagram.com/grecsoc">Instagram</a>
-      <a href="https://grecsoc.substack.com">Substack</a>
-      <a href="https://youtube.com/@grecsoc">YouTube</a>
+      <a href="https://x.com/grecsoc" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24H16.17l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25H8.08l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+      <a href="https://instagram.com/grecsoc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+      <a href="https://grecsoc.substack.com" aria-label="Substack"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="4" width="18" height="3.2"/><rect x="3" y="9" width="18" height="3.2"/><path d="M3 14.5h18v2.2L12 21.5 3 16.7z"/></svg></a>
+      <a href="https://youtube.com/@grecsoc" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="M10 8.7l6 3.3-6 3.3z" fill="var(--paper)"/></svg></a>
     </nav>
   </div>
 </header>
@@ -253,11 +256,11 @@ footer.foot{padding:3rem 0 2.5rem}
     <div class="foot__row">
       <p class="foot__note">GRECSOC — Grupo de Estudios de Ciencias Sociales Computacionales. Universidad de Buenos Aires.</p>
       <div class="foot__links">
-        <a href="https://x.com/grecsoc">X</a>
-        <a href="https://instagram.com/grecsoc">Instagram</a>
-        <a href="https://grecsoc.substack.com">Substack</a>
-        <a href="https://youtube.com/@grecsoc">YouTube</a>
-        <a href="mailto:grecsoc2026@gmail.com">grecsoc2026@gmail.com</a>
+        <a href="https://x.com/grecsoc" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24H16.17l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25H8.08l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://instagram.com/grecsoc" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="https://grecsoc.substack.com" aria-label="Substack"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="4" width="18" height="3.2"/><rect x="3" y="9" width="18" height="3.2"/><path d="M3 14.5h18v2.2L12 21.5 3 16.7z"/></svg></a>
+        <a href="https://youtube.com/@grecsoc" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><path d="M10 8.7l6 3.3-6 3.3z" fill="var(--paper)"/></svg></a>
+        <a class="mail" href="mailto:grecsoc2026@gmail.com">grecsoc2026@gmail.com</a>
       </div>
     </div>
   </div>

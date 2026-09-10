@@ -34,7 +34,7 @@ brand/
 - **Mark:** final. One geometry (five beads that don't touch, on a rising curve that steepens toward the last bead, edge-to-edge gaps equal (~8 units)).
 - **Colour:** the shared neutral shell palette (navy `#34506E`, ink `#17181C`,
   paper `#FBFAF7`, pale blue `#A9C4DD` for the mark on dark). A direction-specific
-  palette replaces this once the design direction (A–F) is chosen.
+  palette replaces this once the design direction (A–G) is chosen.
 - **Wordmark:** provisional. Set in Libre Franklin as a placeholder; the typeface
   and the wording (`GRECSOC` is a working acronym — see `docs/grecsoc.md`) are
   confirmed with the design direction. Until then, prefer the mark alone.

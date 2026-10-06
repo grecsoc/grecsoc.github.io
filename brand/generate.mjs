@@ -25,12 +25,14 @@ const OUT_SOCIAL = join(HERE, 'social');
 const OUT_FAV = join(HERE, 'favicon');
 
 // ---- geometry — one mark, shared with the .svg sources in brand/mark/ -------
-// Five beads that DON'T touch, on a rising curve that steepens toward the last
-// bead (not a straight line) — reads as acceleration/exponential. Gaps between
+// Five beads that DON'T touch, on the top half of a sigmoid: direction turns evenly (~20° per bead,
+// 70° → 10°) so it reads as one smooth curve — a
+// near-vertical rise that levels off but keeps edging upward — the slowdown we want, not the
+// exponential. Bead sizes unchanged; gaps between
 // bead edges are equal (~8 units) rather than center-to-center spacing.
-const GEOM = [[16,66,3],[31.3,63.3,4.5],[48.4,56.4,6],[66.2,44.4,7.5],[83.3,26.7,9]];
-const GEOM_VB = '13 17.7 79.3 51.3';              // tight bounding box of GEOM
-const GEOM_NUDGE = 'translate(-2.7 6.7)';         // optical centring for square crops
+const GEOM = [[17.0,74.9,3],[22.3,60.3,4.5],[34.2,46.1,6],[52.8,35.4,7.5],[77.0,31.1,9]];
+const GEOM_VB = '13 21.1 74 57.8';              // bounding box of GEOM + 1 unit margin (keeps edge beads from clipping)
+const GEOM_NUDGE = 'translate(-1.5 3.4)';         // optical centring for square crops
 
 // ---- tokens ----------------------------------------------------------------
 const T = {
@@ -58,7 +60,7 @@ const markSquare = (fill, size) =>
 
 // mark cropped to its bounding box — fills its frame, for lockups
 const markTight = (fill, h) =>
-  `<svg width="${(h * 79.3 / 51.3).toFixed(1)}" height="${h}" viewBox="${GEOM_VB}" fill="${fill}"
+  `<svg width="${(h * 74 / 57.8).toFixed(1)}" height="${h}" viewBox="${GEOM_VB}" fill="${fill}"
         xmlns="http://www.w3.org/2000/svg">${dots(fill)}</svg>`;
 
 // Libre Franklin, fetched once by Node (Chromium here has no network) and
